@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>客户要求</title>
+
+    <!-- core CSS -->
+    <link href="css/ccpit-patent.min.css" rel="stylesheet">
+    <link href="jquery-ui-base-1.11.4/jquery-ui.css" rel="stylesheet">
+    <!-- Optional Theme -->
+    <link href="data:text/css;charset=utf-8," data-href="css/ccpit-patent-theme.min.css" rel="stylesheet">
+
+    <!-- Documentation extras -->	
+    <link href="css/ccpit-base.css" rel="stylesheet">
+    <link href="css/template-2.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="./assets/js/html5shiv.min.js"></script>
+    <script src="./assets/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="body-ccpit">
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-ccpit">   
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="navbar-brand navbar-logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARQAAAAYCAYAAAA7xQK2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxOTY4NTQ4Yi03MWQ4LTQxOGUtYTQ5Yi0zMzgwNmU2YmQxZWEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RURFMkUyRkFBRjczMTFFNThFQUJDM0VFNUM0NzUyODkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RURFMkUyRjlBRjczMTFFNThFQUJDM0VFNUM0NzUyODkiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5ZDNiMGQ4OS0zMzY4LTQxYTgtODQ5Zi05NWRkNTYwMjUyNDEiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo3ZGY2ZWE2MC1mNzBjLTExNzgtOGY4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">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul class="nav navbar-nav">
+                <li role="presentation"><a href="#">催办 <span class="badge badge-red">84</span></a></li>
+                <li role="presentation"><a href="#">消息 <span class="badge badge-red">84</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="margin-right-80">&nbsp;</li>
+                <li class="navbar-text">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    <span>申请一处</span>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">客户要求管理员 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-cog">&nbsp;</span>修改密码</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-tint">&nbsp;</span>更换皮肤</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-remove-circle">&nbsp;</span>关闭当前窗口</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-share">&nbsp;</span>返回上一级</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-off">&nbsp;</span>退出/重新登录</a></li>
+                    </ul>
+                </li>
+                <li><p class="margin-right-60"></p></li>
+                <li class="navbar-btn">
+                    <button type="submit" class="btn btn-default btn-sm">返回</button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<div class="wrap">
+
+    <div class="sidebar">
+        <ul class="nav nav-sidebar">
+            <li>
+                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                <!--<span class="badge">3</span>-->
+                <span class="glyphicon-class">代办要求</span>
+            </li>
+            <li>
+                <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+                <span class="glyphicon-class">客户要求录入</span>
+            </li>
+            <li>
+                <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                <span class="glyphicon-class">客户要求管理</span>
+            </li>
+             
+        </ul>
+    </div>
+
+    <div class="main-wrap">
+
+
+        <div id="main-left" class="main-left">
+
+            <div class="well well-lg well-icon">
+            
+                <form action="index_submit" method="get" accept-charset="utf-8">
+                 
+                <div class="row row-35 marginBt10">
+                    <div class="col-md-3 form-name">委托人码:</div>
+                    <div class="col-md-8 content">
+                        <input type="text" class="form-control" placeholder="请输入委托人码..."
+                            size="2">            
+                    </div>                        
+                </div>
+                <div class="row row-35 marginBt10">
+                 <div class="col-sm-3 form-name">申请人码:</div>
+                    <div class="col-sm-8 content">
+                        <input type="text" class="form-control" placeholder="请输入申请人码..."
+                            size="2">            
+                    </div>                        
+                </div>
+                <div class="row row-35 marginBt10">
+                 <div class="col-sm-3 form-name">案卷类型:</div>
+                    
+                    <div class="col-sm-8 ">
+                        <select class="form-control">
+                            <option></option>
+                            <option>外观</option>
+                            <option>新发明</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>                       
+                </div>
+                 <div class="row row-35 marginBt10">
+                 <div class="col-sm-3 form-name">案卷号:</div>
+                    <div class="col-sm-8 content">
+                        <input type="text" class="form-control" placeholder="请输入案卷号..."
+                            size="2">            
+                    </div>                        
+                </div>
+                <div class="row row-35 marginBt10">
+                 <div class="col-sm-3 form-name">要求摘要:</div>
+                    <div class="col-sm-8 content">
+                        <textarea class="form-control" rows="8"></textarea>           
+                    </div>                        
+                </div>
+                <div class="row row-35 marginBt10">
+                 <div class="col-sm-3 form-name">备注:</div>
+                    <div class="col-sm-8 content">
+                        <input type="text" class="form-control " placeholder="请输入备注信息..."
+                            size="2">            
+                    </div>                        
+                </div>
+                <div class="row row-35 marginBt10">
+                 <div class="col-sm-3 form-name">有效期:</div>
+                    <div class="col-sm-8 ">
+                        <div class="has-feedback">
+                            <input type="text" class="form-control" id="datepicker">
+                            <span class="glyphicon glyphicon-calendar form-control-feedback"
+                                  aria-hidden="true"></span>
+                        </div>
+                    </div>                     
+                </div>
+              
+               
+                <div class="row row-35 marginBt10">
+                    <div class="col-sm-offset-3 col-sm-8 ">
+                        <button type="submit" class="btn btn-primary w30">保存</button>
+                        <button type="submit" class="btn btn-default w30">取消</button>
+                    </div>
+                </div>
+                </form>
+             </div>
+         </div>
+        </div>
+
+        <div id="main-split" class="main-split"></div>
+
+        <div id="main-content" class="main-content">
+           
+              
+            <div class="content-box-body container-fluid" style="margin-top:-100px">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-lg">
+                            <label class="title-icon bg-blue">设置客户要求类型</label>
+                            <div class="row form-group">
+                                
+                                <div class="col-md-10">
+                                    <div class="w100 inline-block baseLine verticalTop">信函<i class="glyphicon glyphicon-menu-right"></i>
+                                     <a href="#">发送方式</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">邮件抄送人设置</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">信函内容格式段设置</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">信函附件设置</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">信函模板设置</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">发送次数</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                    </div> 
+                                </div>
+                                <div class="col-md-2">
+                                       <button type="button" class="addWell-addBtn btn btn-default">　新 增　<span class="glyphicon glyphicon-plus"></span>　</button>
+                                    </div>
+                             </div>
+                               
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <div class="w100 inline-block baseLine verticalTop">账单<i class="glyphicon glyphicon-menu-right"></i>
+
+                                     <a href="#">联系人</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">模板币种</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">收费语种</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">折扣</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">包干</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">收费项目</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">账单拆分</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">账单合并</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">账单格式</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">发送方式</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                    </div> 
+                                </div> 
+                            </div>
+                             
+                            <div class="row form-group">
+                                
+                                <div class="col-md-12">
+                                    <div class="w100 inline-block baseLine verticalTop">联系人信息修改<i class="glyphicon glyphicon-menu-right"></i>
+                                     <a href="#">关联公司设置</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">委托人修改</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">转让变更</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">阶段联系人设置</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                    </div> 
+                                </div>
+                               
+                         </div>
+                         <div class="row form-group">
+                                
+                                <div class="col-md-12">
+                                    <div class="w100 inline-block baseLine verticalTop">流程<i class="glyphicon glyphicon-menu-right"></i>
+                                     <a href="#">立卷</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">新申请提交</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">初步审查</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">公开</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">(单独)提实审</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">进入实审</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">实质审查</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">复审</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">授权</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">专利维护</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                    </div> 
+                                </div>
+                               
+                         </div>
+                         <div class="row form-group">
+                                
+                                <div class="col-md-12">
+                                    <div class="w100 inline-block baseLine verticalTop">控<i class="glyphicon glyphicon-menu-right"></i>
+                                     <a href="#">立卷</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">新申请提交</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">初步审查</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">公开</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">(单独)提实审</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">进入实审</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">实质审查</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">复审</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">授权</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">专利维护</a> &nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                    </div> 
+                                </div>
+                               
+                         </div>
+                         <div class="row form-group">
+                                
+                                <div class="col-md-12">
+                                    <div class="w100 inline-block baseLine verticalTop">收文<i class="glyphicon glyphicon-menu-right"></i>
+                                     <a href="#">收文分拣</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">向外保密转达要求</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                      
+                                    </div> 
+                                </div>
+                               
+                         </div>
+                         <div class="row form-group">
+                                
+                                <div class="col-md-12">
+                                    <div class="w100 inline-block baseLine verticalTop">发文<i class="glyphicon glyphicon-menu-right"></i>
+                                     <a href="#">抄送设置</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">邮件加密</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                     <a href="#">收件确认</a>&nbsp;<img src="img/dataLine-bg.png" alt="分割线">
+                                    </div> 
+                                </div>
+                               
+                         </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well">
+
+                            <!-- Nav tabs -->
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#tab-pane1" aria-controls="home"
+                                                                                  role="tab" data-toggle="tab">客户要求查询</a>
+                                        </li>
+                                        <li role="presentation"><a href="#tab-pane2" aria-controls="profile" role="tab"
+                                                                   data-toggle="tab">客户信息检索</a></li>
+                                        <li role="presentation"><a href="#tab-pane3" aria-controls="messages" role="tab"
+                                                                   data-toggle="tab">分类标签</a></li>
+                                        <li role="presentation"><a href="#tab-pane4" aria-controls="settings" role="tab"
+                                                                   data-toggle="tab">分类标签</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="tab-pane1">
+                                    <div class="row form-group">
+                                        <div class="col-md-3">
+                                            <span class="inline-block w15">委托人码</span>
+                                            <input type="text" class="form-control inline-block w70" value="">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <span class="inline-block w15">申请人码</span>
+                                            <input type="text" class="form-control inline-block w70" value="">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <span class="inline-block w15">案卷类型</span>
+                                             <select class="form-control inline-block w70">
+                                                <option>下拉框</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <span class="inline-block w15">案卷号</span>
+                                            <input type="text" class="form-control inline-block w70" value="">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row form-group">
+                                    	<button type="button" class="btn btn-primary w10 verticalTop">查询</button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table class="table table-bordered table-hover bg-White table-center">
+                                                <thead>
+                                                <tr>
+                                                    <th>
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div>序号</div>
+                                                    </th>
+                                                    <th>
+                                                        <div>委托人码</div>
+                                                    </th>
+                                                    <th>
+                                                        <div>申请人码</div>
+                                                    </th>
+                                                    <th>
+                                                        <div>案卷类型</div>
+                                                    </th>
+                                                    <th>
+                                                        <div>案卷号</div>
+                                                    </th>
+                                                    <th>
+                                                        <div>客户要求类型</div>
+                                                    </th>
+                                                    <th>
+                                                        <div>要求摘要说明</div>
+                                                    </th>
+                                                    <th>
+                                                        <div>客户要求原文</div>
+                                                    </th>
+                                                    <th>
+                                                        <div>有效期</div>
+                                                    </th>
+                                                    <th>
+                                                        <div>操作</div>
+                                                    </th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>1</td>
+                                                    <td>US016058</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>IIM093210</td>
+                                                    <td>信函</td>
+                                                    <td>新申请确认函传真发送</td>
+                                                    <td><a href="#">原文链接</a></td>
+                                                    <td>2020-12-31</td>
+                                                    <td align="center">
+                                                        <div class="btn-group  pull-right float-none">
+                                                              <span class="dropdown-toggle shadow-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                下拉框 <span class="caret"></span>
+                                                              </span>
+                                                              <ul class="dropdown-menu">
+                                                                <li><a href="#">查看</a></li>
+                                                                <li><a href="#">修改</a></li>
+                                                                <li><a href="#">删除</a></li>
+                                                              </ul>
+                                                        </div>
+                                                      </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>1</td>
+                                                    <td>US016058</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>IIM093210</td>
+                                                    <td>信函</td>
+                                                    <td>新申请确认函传真发送</td>
+                                                    <td><a href="#">原文链接</a></td>
+                                                    <td>2020-12-31</td>
+                                                    <td align="center">
+                                                        <div class="btn-group  pull-right float-none">
+                                                              <span class="dropdown-toggle shadow-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                下拉框 <span class="caret"></span>
+                                                              </span>
+                                                              <ul class="dropdown-menu">
+                                                                <li><a href="#">查看</a></li>
+                                                                <li><a href="#">修改</a></li>
+                                                                <li><a href="#">删除</a></li>
+                                                              </ul>
+                                                        </div>
+                                                      </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>1</td>
+                                                    <td>US016058</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>IIM093210</td>
+                                                    <td>信函</td>
+                                                    <td>新申请确认函传真发送</td>
+                                                    <td><a href="#">原文链接</a></td>
+                                                    <td>2020-12-31</td>
+                                                    <td align="center">
+                                                        <div class="btn-group  pull-right float-none">
+                                                              <span class="dropdown-toggle shadow-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                下拉框 <span class="caret"></span>
+                                                              </span>
+                                                              <ul class="dropdown-menu">
+                                                                <li><a href="#">查看</a></li>
+                                                                <li><a href="#">修改</a></li>
+                                                                <li><a href="#">删除</a></li>
+                                                              </ul>
+                                                        </div>
+                                                      </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>1</td>
+                                                    <td>US016058</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>IIM093210</td>
+                                                    <td>信函</td>
+                                                    <td>新申请确认函传真发送</td>
+                                                    <td><a href="#">原文链接</a></td>
+                                                    <td>2020-12-31</td>
+                                                    <td align="center">
+                                                        <div class="btn-group  pull-right float-none">
+                                                              <span class="dropdown-toggle shadow-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                下拉框 <span class="caret"></span>
+                                                              </span>
+                                                              <ul class="dropdown-menu">
+                                                                <li><a href="#">查看</a></li>
+                                                                <li><a href="#">修改</a></li>
+                                                                <li><a href="#">删除</a></li>
+                                                              </ul>
+                                                        </div>
+                                                      </td>
+                                                </tr>
+                                                
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 baseLine">
+                                            共20页 记录/2页
+                                        </div>
+                                        <!-- pages pagination-->
+                                        <div class="col-md-9 text-right">
+                                            <nav class="inline-block">
+                                                <ul class="pagination marginTB0">
+                                                    <li class="disabled"><a href="#" aria-label="Previous"><span
+                                                            aria-hidden="true">«</span></a></li>
+                                                    <li class="disabled"><a href="#" aria-label="Previous"><span
+                                                            aria-hidden="true">上一页</span></a></li>
+                                                    <li class="active"><a href="#">1 <span
+                                                            class="sr-only">(current)</span></a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#" aria-label="Next"><span
+                                                            aria-hidden="true">下一页</span></a></li>
+                                                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                            <input type="text"
+                                                   class="form-control inline-block w10 margin-left-10 verticalTop"
+                                                   value=""/>
+                                            <button type="button" class="btn btn-primary w10 verticalTop">跳 转</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab-pane2">
+                                    <div class="row form-group">
+                                        <div class="col-md-4">
+                                            <span class="inline-block w15">客户名</span>
+                                            <input type="text" class="form-control inline-block w70" value="">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <span class="inline-block w15">传真号</span>
+                                            <input type="text" class="form-control inline-block w70" value="">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <span class="inline-block w15">邮件地址</span>
+                                            <input type="text" class="form-control inline-block w70" value=""> 
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    <div class="row form-group">
+                                    	<button type="button" class="btn btn-primary w10 verticalTop">查询</button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table class="table table-bordered table-hover bg-White table-center">
+                                                <thead>
+                                                <tr>
+                                                    <th>
+                                                        <div class="text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="text-center">序号</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="text-center">客户名称</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="text-center">委托人码</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="text-center">申请人码</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="text-center">邮件地址</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="text-center">传真号</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="text-center">案卷统计量</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="text-center">其它</div>
+                                                    </th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>1</td>
+                                                    <td>IIM12001</td>
+                                                    <td>DN0098-C1</td>
+                                                    <td>12345</td>
+                                                    <td>履带起重机</td>
+                                                    <td>多媒体领域</td>
+                                                    <td>苏迪克</td>
+                                                    <td>其它</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>2</td>
+                                                    <td>IIM12001</td>
+                                                    <td>DN0098-C1</td>
+                                                    <td>12345</td>
+                                                    <td>履带起重机</td>
+                                                    <td>多媒体领域</td>
+                                                    <td>苏迪克</td>
+                                                    <td>其它</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>1</td>
+                                                    <td>IIM12001</td>
+                                                    <td>DN0098-C1</td>
+                                                    <td>12345</td>
+                                                    <td>履带起重机</td>
+                                                    <td>多媒体领域</td>
+                                                    <td>苏迪克</td>
+                                                    <td>其它</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>3</td>
+                                                    <td>IIM12001</td>
+                                                    <td>DN0098-C1</td>
+                                                    <td>12345</td>
+                                                    <td>履带起重机</td>
+                                                    <td>多媒体领域</td>
+                                                    <td>苏迪克</td>
+                                                    <td>其它</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class="checkbox margin0">
+                                                            <label>
+                                                                <input type="checkbox">
+                                                            </label>
+                                                        </div>
+                                                    </th>
+                                                    <td>4</td>
+                                                    <td>IIM12001</td>
+                                                    <td>DN0098-C1</td>
+                                                    <td>12345</td>
+                                                    <td>履带起重机</td>
+                                                    <td>多媒体领域</td>
+                                                    <td>苏迪克</td>
+                                                    <td>其它</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 baseLine">
+                                            共20页 记录/2页
+                                        </div>
+                                        <!-- pages pagination-->
+                                        <div class="col-md-9 text-right">
+                                            <nav class="inline-block">
+                                                <ul class="pagination marginTB0">
+                                                    <li class="disabled"><a href="#" aria-label="Previous"><span
+                                                            aria-hidden="true">«</span></a></li>
+                                                    <li class="disabled"><a href="#" aria-label="Previous"><span
+                                                            aria-hidden="true">上一页</span></a></li>
+                                                    <li class="active"><a href="#">1 <span
+                                                            class="sr-only">(current)</span></a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#" aria-label="Next"><span
+                                                            aria-hidden="true">下一页</span></a></li>
+                                                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                            <input type="text"
+                                                   class="form-control inline-block w10 margin-left-10 verticalTop"
+                                                   value=""/>
+                                            <button type="button" class="btn btn-primary w10 verticalTop">跳 转</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab-pane3">...</div>
+                                <div role="tabpanel" class="tab-pane" id="tab-pane4">
+                                    <div class="row form-group">
+                                        <div class="col-md-7">
+                                            <span class="inline-block w20">分类输入框</span>
+                                            <input type="text" class="form-control inline-block w70" value="">
+                                        </div>
+                                        <div class="col-md-5 text-right form-inline">
+                                            <select class="form-control w30">
+                                                <option>下拉框</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                            <select class="form-control w30">
+                                                <option>下拉框</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+
+                                            <select class="form-control w30">
+                                                <option>下拉框</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table class="table table-bordered table-hover bg-White table-center">
+                                                <thead>
+                                                <tr>
+                                                    <th>
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class=" text-center">序号</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class=" text-center">委托人码</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class=" text-center">申请人码</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class=" text-center">案卷类型</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class=" text-center">案卷号</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class=" text-center">客户要求类型</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class=" text-center">客户要求摘要</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class=" text-center">客户要求原文</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class=" text-center">有效期</div>
+                                                    </th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>1</td>
+                                                    <td>IIM12001</td>
+                                                    <td>DN0098-C1</td>
+                                                    <td>12345</td>
+                                                    <td>履带起重机</td>
+                                                    <td>多媒体领域</td>
+                                                    <td>苏迪克</td>
+                                                    <td>其它</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>1</td>
+                                                    <td>IIM12001</td>
+                                                    <td>DN0098-C1</td>
+                                                    <td>12345</td>
+                                                    <td>履带起重机</td>
+                                                    <td>多媒体领域</td>
+                                                    <td>苏迪克</td>
+                                                    <td>其它</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>1</td>
+                                                    <td>IIM12001</td>
+                                                    <td>DN0098-C1</td>
+                                                    <td>12345</td>
+                                                    <td>履带起重机</td>
+                                                    <td>多媒体领域</td>
+                                                    <td>苏迪克</td>
+                                                    <td>其它</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>1</td>
+                                                    <td>IIM12001</td>
+                                                    <td>DN0098-C1</td>
+                                                    <td>12345</td>
+                                                    <td>履带起重机</td>
+                                                    <td>多媒体领域</td>
+                                                    <td>苏迪克</td>
+                                                    <td>其它</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class=" text-center">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <td>1</td>
+                                                    <td>IIM12001</td>
+                                                    <td>DN0098-C1</td>
+                                                    <td>12345</td>
+                                                    <td>履带起重机</td>
+                                                    <td>多媒体领域</td>
+                                                    <td>苏迪克</td>
+                                                    <td>其它</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 baseLine">
+                                            共20页 记录/2页
+                                        </div>
+                                        <!-- pages pagination-->
+                                        <div class="col-md-9 text-right">
+                                            <nav class="inline-block">
+                                                <ul class="pagination marginTB0">
+                                                    <li class="disabled"><a href="#" aria-label="Previous"><span
+                                                            aria-hidden="true">«</span></a></li>
+                                                    <li class="disabled"><a href="#" aria-label="Previous"><span
+                                                            aria-hidden="true">上一页</span></a></li>
+                                                    <li class="active"><a href="#">1 <span
+                                                            class="sr-only">(current)</span></a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#" aria-label="Next"><span
+                                                            aria-hidden="true">下一页</span></a></li>
+                                                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                            <input type="text"
+                                                   class="form-control inline-block w10 margin-left-10 verticalTop"
+                                                   value=""/>
+                                            <button type="button" class="btn btn-primary w10 verticalTop">跳 转</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+
+<!-- ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="jquery-ui-base-1.11.4/jquery-ui.js"></script>
+<script src="js/ccpit-patent.min.js"></script>
+<script src="js/ccpit-base.js"></script>
+<script src="js/vendor/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script src="js/template-1.js"></script>
+
+</body>
+</html>

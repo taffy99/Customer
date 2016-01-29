@@ -1,0 +1,106 @@
+.left-box-center {
+    height: 280px;
+}
+
+.left-box-bottom {
+    position: fixed;
+    width: 450px;
+    top: 485px;
+    background-color: #f2f2f2;
+    border-width: 0px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    bottom: 0;
+}
+
+.left-box-center .bottom {
+    margin-top: 20px;
+}
+
+.left-box-center .button-list {
+    display: inline-block;
+}
+
+.content-box-body {
+    top: 150px;
+}
+
+
+ul.circle {
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+ul.circle > li {
+    margin-bottom: 10px;
+}
+
+.nav-tabs.nav-tab-light {
+}
+
+.nav-tabs.nav-tab-light > li > a {
+    color: #000;
+    margin-right: 0;
+}
+
+.nav-tabs.nav-tab-light > li > a:hover {
+    text-decoration: none;
+    background-color: #e4e4e4;
+}
+
+.nav-tabs.nav-tab-light .active {
+    font-weight: bold;
+}
+
+.nav-tabs.nav-tab-light .dropdown {
+    background-color: #f2f2f2;
+}
+
+.tab-content-light {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-width: 0 1px;
+    padding: 20px;
+}
+
+.tab-content-light.small {
+    line-height: 160%;
+}
+
+.well.well-icon {
+    background-color: transparent;
+}
+
+.well.well-icon .title-icon {
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    pointer-events: none;
+    background-color: #8cc152;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 1.3333333;
+}
+
+.well.well-icon .form-name {
+    text-align: right;
+}
+
+.row-25 {
+    line-height: 25px;
+}
+
+.row-35 {
+    line-height: 35px;
+}
+
+.multi-group > .inline-block {
+    width: 94%;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
