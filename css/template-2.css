@@ -1,0 +1,197 @@
+.left-box-center {
+    height: 280px;
+}
+
+.left-box-bottom {
+    position: fixed;
+    width: 450px;
+    top: 485px;
+    background-color: #f2f2f2;
+    border-width: 0px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    bottom: 0;
+}
+
+.left-box-center .bottom {
+    margin-top: 20px;
+}
+
+.left-box-center .button-list {
+    display: inline-block;
+}
+
+.content-box-body {
+    top: 150px;
+}
+
+
+
+
+ul.circle {
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+ul.circle > li {
+    margin-bottom: 10px;
+}
+
+.nav-tabs.nav-tab-light {
+}
+
+.nav-tabs.nav-tab-light > li > a {
+    color: #000;
+    margin-right: 0;
+}
+
+.nav-tabs.nav-tab-light > li > a:hover {
+    text-decoration: none;
+    background-color: #e4e4e4;
+}
+
+.nav-tabs.nav-tab-light .active {
+    font-weight: bold;
+}
+
+.nav-tabs.nav-tab-light .dropdown {
+    background-color: #f2f2f2;
+}
+
+.tab-content-light {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-width: 0 1px;
+    padding: 20px;
+}
+
+.tab-content-light.small {
+    line-height: 160%;
+}
+
+.well.well-icon {
+    background-color: transparent;
+}
+
+.well.well-icon .title-icon {
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    pointer-events: none;
+    background-color: #8cc152;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 1.3333333;
+}
+
+.well.well-icon .form-name {
+    text-align: right;
+}
+
+.row-25 {
+    line-height: 25px;
+}
+
+.row-35 {
+    line-height: 35px;
+}
+
+.multi-group > .inline-block {
+    width: 94%;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.nav-siderbar{
+	width:100%;
+	padding:30px 0;
+	border-right:1px solid #ddd;
+	}
+    .bwizard-steps {
+    	display: inline-block;
+    	margin: 0; padding: 0;
+    	background: #fff }
+    	.bwizard-steps .active {
+    		color: #fff;
+    		background: #007ACC }
+    	.bwizard-steps .active:after {
+    		border-left-color: #007ACC }
+    	.bwizard-steps .active a {
+    		color: #fff;
+    		cursor: default }
+    	.bwizard-steps .label {
+    		position: relative;
+    		top: -1px;
+    		margin: 0 5px 0 0; padding: 1px 5px 2px }
+    	.bwizard-steps .active .label {
+    		background-color: #333;}
+    	.bwizard-steps li {
+    		display: inline-block; position: relative;
+    		margin-right: 5px;
+    		padding: 12px 17px 10px 30px;
+    		*display: inline;
+    		*padding-left: 17px;
+    		background: #efefef;
+    		line-height: 18px;
+    		list-style: none;
+    		zoom: 1; }
+    	.bwizard-steps li:first-child {
+    		padding-left: 12px;
+    		-moz-border-radius: 4px 0 0 4px;
+    		-webkit-border-radius: 4px 0 0 4px;
+    		border-radius: 4px 0 0 4px; }
+    	.bwizard-steps li:first-child:before {
+    		border: none }
+    	.bwizard-steps li:last-child {
+    		margin-right: 0;
+    		-moz-border-radius: 0 4px 4px 0;
+    		-webkit-border-radius: 0 4px 4px 0;
+    		border-radius: 0 4px 4px 0; }
+    	.bwizard-steps li:last-child:after {
+    		border: none }
+    	.bwizard-steps li:before {
+    		position: absolute;
+    		left: 0; top: 0;
+    		height: 0; width: 0;
+    		border-bottom: 20px inset transparent;
+    		border-left: 20px solid #fff;
+    		border-top: 20px inset transparent;
+    		content: "" }
+    	.bwizard-steps li:after {
+    		position: absolute;
+    		right: -20px; top: 0;
+    		height: 0; width: 0;
+    		border-bottom: 20px inset transparent;
+    		border-left: 20px solid #efefef;
+    		border-top: 20px inset transparent;
+    		content: "";
+    		z-index: 2; }
+    	.bwizard-steps a {
+    		color: #333 }
+    	.bwizard-steps a:hover {
+    		text-decoration: none }
+    .bwizard-steps.clickable li:not(.active) {
+    	cursor: pointer }
+    .bwizard-steps.clickable li:hover:not(.active) {
+    	background: #ccc }
+    .bwizard-steps.clickable li:hover:not(.active):after {
+    	border-left-color: #ccc }
+    .bwizard-steps.clickable li:hover:not(.active) a {
+    	color: #08c }
+    @media (max-width: 480px) {
+    	/* badges only on small screens */
+    	.bwizard-steps li:after,
+    	.bwizard-steps li:before {
+    		border: none }
+    	.bwizard-steps li,
+    	.bwizard-steps li.active,
+    	.bwizard-steps li:first-child,
+    	.bwizard-steps li:last-child {
+    		margin-right: 0;
+    		padding: 0;
+    		background-color: transparent }
+    }
