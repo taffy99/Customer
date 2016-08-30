@@ -1,0 +1,834 @@
+<div class="page-title">
+	<div class="title-env">
+		<h1 class="title">待办任务列表</h1>
+	</div>
+	<div class="breadcrumb-env">
+		<ol class="breadcrumb bc-1">
+			<li>
+			<a href="index.html"><i class="fa-home"></i>待办任务</a>
+			</li>
+			<li class="active">
+			<strong>待办任务列表</strong>
+			</li>
+		</ol>
+	</div>
+</div>
+<div class="row">
+ 	<div class="col-md-12">
+		<div class="panel-group" id="taskList">
+			<!-- 当日任务 -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+					<a data-toggle="collapse" data-parent="#taskList" href="#dayTask">
+										当日任务
+					</a>
+					</h3>
+				</div>
+			<div id="dayTask" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<script type="text/javascript">
+									jQuery(document).ready(function($)
+									{
+										$("#example-2").dataTable({
+											dom: "t" + "<'row'<'col-xs-6'i><'col-xs-6'p>>",
+											aoColumns: [// 
+												null,
+												null,
+												null,
+												null,
+												null,
+												null,
+												null,
+												null
+											],
+											 oLanguage: {    
+							                    sProcessing : "正在获取数据，请稍后...",    
+							                    sLengthMenu: "显示 _MENU_ 条",    
+							                    sZeroRecords : "没有您要搜索的内容",    
+							                    sInfo : "显示 _START_ 到  _END_ 条  总共_TOTAL_ 条记录",    
+							                    sInfoEmpty : "记录数为0",    
+							                    sInfoFiltered : "(共显示 _MAX_ 条数据)",    
+							                    sInfoPostFix: "",    
+							                    oPaginate: {    
+							                        sFirst : "第一页",    
+							                        sPrevious : "上一页",    
+							                        sNext : "下一页",    
+							                        sLast : "最后一页"    
+							                    }  
+							                },  
+										}); 
+									});
+									</script>
+						<table class="table table-bordered table-striped" id="example-2">
+						<thead>
+						<tr>
+							<th>
+								任务编号
+							</th>
+							<th>
+								任务类型
+							</th>
+							<th>
+								任务内容
+							</th>
+							<th>
+								发送人
+							</th>
+							<th>
+								发送方式
+							</th>
+							<th>
+								发送优先级
+							</th>
+							<th>
+								任务来源
+							</th>
+							<th>
+								操作
+							</th>
+						</tr>
+						</thead>
+						<tbody class="middle-align">
+						<tr>
+							<td>
+								00001
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								电子邮件
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="dealtMail.html" class="btn btn-info btn-sm btn-icon icon-left">
+														办理
+								</a>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00002
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								CPC
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-info btn-sm btn-icon icon-left">
+														办理
+								</a>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00003
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								电子邮件
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-info btn-sm btn-icon icon-left">
+														办理
+								</a>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00004
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								电子传真
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-info btn-sm btn-icon icon-left">
+														办理
+								</a>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00005
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								邮寄
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-info btn-sm btn-icon icon-left">
+														办理
+								</a>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00006
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								人工递送
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-info btn-sm btn-icon icon-left">
+														办理
+								</a>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- 定时任务 -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+					<a data-toggle="collapse" data-parent="#taskList" href="#cronTask" class="collapsed">
+										定时任务
+					</a>
+					</h3>
+				</div>
+				<div id="cronTask" class="panel-collapse collapse">
+					<div class="panel-body">
+						<script type="text/javascript">
+									jQuery(document).ready(function($)
+									{
+										$("#example-3").dataTable({
+											dom: "t" + "<'row'<'col-xs-6'i><'col-xs-6'p>>",
+											aoColumns: [  
+												null,
+												null,
+												null,
+												null,
+												null,
+												null,
+												null,
+												null,
+												null
+											],
+											 oLanguage: {    
+							                    sProcessing : "正在获取数据，请稍后...",    
+							                    sLengthMenu: "显示 _MENU_ 条",    
+							                    sZeroRecords : "没有您要搜索的内容",    
+							                    sInfo : "显示 _START_ 到  _END_ 条  总共_TOTAL_ 条记录",    
+							                    sInfoEmpty : "记录数为0",    
+							                    sInfoFiltered : "(共显示 _MAX_ 条数据)",    
+							                    sInfoPostFix: "",    
+							                    oPaginate: {    
+							                        sFirst : "第一页",    
+							                        sPrevious : "上一页",    
+							                        sNext : "下一页",    
+							                        sLast : "最后一页"    
+							                    }  
+							                },  
+										});  
+									});
+									</script>
+						<table class="table table-bordered table-striped" id="example-3">
+						<thead>
+						<tr>
+							<th>
+								任务编号
+							</th>
+							<th>
+								任务类型
+							</th>
+							<th>
+								任务内容
+							</th>
+							<th>
+								发送人
+							</th>
+							<th>
+								发送方式
+							</th>
+							<th>
+								发送时间
+							</th>
+							<th>
+								优先级
+							</th>
+							<th>
+								任务来源
+							</th>
+							<th>
+								操作
+							</th>
+						</tr>
+						</thead>
+						<tbody class="middle-align">
+						<tr>
+							<td>
+								00001
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								电子邮件
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00002
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								CPC
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00003
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								电子邮件
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00004
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								电子传真
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00005
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								邮寄
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00006
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								人工递送
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00007
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								人工递送
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00008
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								人工递送
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00009
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								人工递送
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00010
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								人工递送
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00011
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								人工递送
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00012
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								人工递送
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00013
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								人工递送
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00014
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								人工递送
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								00015
+							</td>
+							<td>
+								官方
+							</td>
+							<td>
+								任务内容
+							</td>
+							<td>
+								大包管理员
+							</td>
+							<td>
+								人工递送
+							</td>
+							<td>
+								2016/6/21
+							</td>
+							<td>
+								优先
+							</td>
+							<td>
+								收文系统
+							</td>
+							<td>
+								<a href="#" class="btn btn-secondary btn-sm btn-icon icon-left">
+														查看
+								</a>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
